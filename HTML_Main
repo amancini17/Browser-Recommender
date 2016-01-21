@@ -1,0 +1,49 @@
+# Browser-Recommender
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>title</title>
+	</head>
+	<body>
+
+   <button onclick="myFunction()">Find out your browser!</button>
+    <div id="example"></div>
+
+<script>
+function myFunction() {
+alert( "Browser CodeName:"  + navigator.appCodeName + "\nBrowser Version: " + navigator.appVersion + "\nUser-agent header: " + navigator.userAgent + "\nUser-agent language: " + navigator.systemLanguage);
+}
+</script>
+
+<script type="text/javascript">
+
+if (/Firefox[\/\s](\d+\.\d+)/.test(navigator.userAgent)){ //Use code from http://www.javascriptkit.com/javatutors/navigator.shtml to find last digits in userAgent
+ var ffversion=new Number(RegExp.$1) 
+ if (ffversion>=35)
+alert("No browser update needed")
+ else if (ffversion>=5)
+alert("You can update your browser")
+ else if (ffversion>=4)
+alert("You can update your browser")
+ else if (ffversion>=3)
+alert("You can update your browser")
+ else if (ffversion>=2)
+alert("You can update your browser")
+ else if (ffversion>=1)
+alert("You can update your browser")
+}
+else
+ alert("not available")
+ 
+ 
+
+
+</script>
+
+
+
+		<applet code="Java_Applet.class" width="300" height="200">
+		</applet>
+	</body>
+</html>
