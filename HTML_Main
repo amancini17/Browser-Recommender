@@ -2,17 +2,43 @@
 
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>title</title>
-	</head>
-	<body>
+<head>
 
-   <button onclick="myFunction()">Find out your browser!</button>
-    <div id="example"></div>
+<center><h1>If Java Applet is not running:</h1></center>
+<center><applet code="Java_Applet.class" width = "500" height="40"></applet></center>
+<h3>One of two things is not causing the Java Applet to run:</h3>
+<ol>
+<li>Browser is out of date</li>
+<li>Java is out of date</li>
+</ol>
 
+<h3>Check the status of the browser</h3>
+<button onClick="myFunction()">Check Browser Status</button>
+	<div id="example"></div>
+	
 <script>
 function myFunction() {
-alert( "Browser CodeName:"  + navigator.appCodeName + "\nBrowser Version: " + navigator.appVersion + "\nUser-agent header: " + navigator.userAgent + "\nUser-agent language: " + navigator.systemLanguage);
+alert("\nBrowser Version: " + navigator.userAgent);
+}
+</script>
+
+<ul>
+<li>Safari: 5.1.7</li>
+<li>Google Chrome: 40.0.2214.91</li>
+<li>Firefox: 43.0.4</li>
+<li>Sea Monkey: 2.39</li>
+<li>Opera: 34.0.2036.25</li>
+<li>Microsoft Edge: 11.0.9600.17501</li>
+<li>Avant: 2016:01</li>
+</ul>
+
+<h3>Click the java update link (if the pop-up is 1.8.0_66 there is no need to update)</h3>
+<button onClick="New_function()">Check Java</button>
+	<div id="example"></div>
+<script src="http://www.java.com/js/deployJava.js"></script>
+<script>
+function New_function(){
+alert(deployJava.getJREs());
 }
 </script>
 
@@ -36,14 +62,42 @@ alert("You can update your browser")
 else
  alert("not available")
  
- 
-
-
 </script>
 
+<h2>Links to Updated Versions of Browsers:</h2>
+
+<p>Safari version 5:</p>
+<a href="https://support.apple.com/downloads/safari"></a>
+
+<p>Firefox version 43:</p>
+<a href="https://support.mozilla.org/en-US/kb/update-firefox-latest-version"></a>
+
+<p>Google Chrome version 40</p>
+<a href="https://support.google.com/chrome/answer/95346?hl=en"></a>
+
+<p>Opera version 34</p>
+<a href="http://www.opera.com/docs/history/"></a>
+
+<p>Microsoft Edge version 11</p>
+<a href="https://www.microsoft.com/en-us/windows/microsoft-edge#O3C6tu5iyJ1d1iSV.97"></a>
+
+<p>SeaMonkey version 2</p>
+<a href=""http://www.seamonkey-project.org/releases/"></a>
+
+<p>Avant version 2016</p>
+<a href="http://www.avantbrowser.com/download.aspx?uil=en"></a>
 
 
-		<applet code="Java_Applet.class" width="300" height="200">
-		</applet>
-	</body>
+<head>
+<h1>Java is out of date</h1>
+</head>
+
+<body>
+<p>Click here to update Java</p>
+<a href="https://www.java.com/en/download/"></a>
+</body>
+</body>
+
+</head>
+</body>
 </html>
