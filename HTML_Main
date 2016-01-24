@@ -3,6 +3,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Browser detection</title>
+<Script Language = "JavaScript">
+browsername=nav.appName;
+</head>
 
 <center><h1>If Java Applet is not running:</h1></center>
 <center><applet code="Java_Applet.class" width = "500" height="40"></applet></center>
